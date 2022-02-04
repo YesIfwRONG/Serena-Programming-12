@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class FlashCard {
     // store the number of cards
     public static int numberOfCards = 0;
-    private static ArrayList<Question>questions = new ArrayList<>();
+    public static ArrayList<Question>questions = new ArrayList<>();
 
     public static void initiate(){
         System.out.println();
@@ -25,11 +25,17 @@ public class FlashCard {
         if (op == 1){
             int key = 0;
             while (key != -1) {
+                System.out.println();
                 System.out.println("Enter -1 to leave; Enter 1 to continue.");
                 Scanner ifLeave = new Scanner(System.in);
-                if (Integer.valueOf(ifLeave.nextLine()) == -1){
-                    key = -1;
+                int doILeave;
+                if (ifLeave.nextLine() == null){
+                    doILeave = 0;
                 }else {
+                    doILeave = Integer.parseInt(ifLeave.nextLine());
+                }
+
+                if (doILeave != -1){
                     System.out.println("Enter your set name: ");
                     Scanner setName = new Scanner(System.in);
 
@@ -43,6 +49,8 @@ public class FlashCard {
                     // Create a question object;
                     questions.add(q1);
                     numberOfCards++;
+                }else {
+                    key = -1;
                 }
             }
             FlashCard.initiate();

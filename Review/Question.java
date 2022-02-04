@@ -1,7 +1,5 @@
 package Review;
 
-import java.util.ArrayList;
-
 public class Question {
     private String qs;
     private String ans;
@@ -11,6 +9,14 @@ public class Question {
         this.name = name;
         this.qs = qs;
         this.ans = ans;
+    }
+
+    public String getQs() {
+        return qs;
+    }
+
+    public String getAns(){
+        return ans;
     }
 
     @Override
