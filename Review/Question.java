@@ -19,6 +19,8 @@ public class Question {
         return ans;
     }
 
+    public String getName() {return name; }
+
     @Override
     public String toString() {
         return  name;

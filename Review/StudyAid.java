@@ -18,15 +18,22 @@ Target:
  */
 
 public class StudyAid {
+    public static String frame = "------------------------------";
     public static void homepage(){
         // Homepage and information:
-        System.out.println();
+        System.out.println(frame);
         System.out.println("HOMEPAGE: ");
-        System.out.println("1. Create Flashcards;");
+        System.out.println("1. Go to Flashcards;");
         System.out.println("2. Take a Quiz;");
         System.out.println("Enter an option ( 1/ 2 ): ");
         Scanner myObj = new Scanner(System.in);
-        int op = Integer.parseInt(myObj.nextLine());
+        String myOb = myObj.nextLine();
+        if(myOb == null || !FlashCard.isStringInt(myOb)){
+            System.out.println("Something went wrong...");
+            System.out.println("Back to the last page...");
+            homepage();
+        }
+        int op = Integer.parseInt(myOb);
 
         // Deciding which page are we going to;
         // 1: Create Flashcards;
@@ -40,24 +47,30 @@ public class StudyAid {
                 System.out.println("Sorry, You don't have any Flashcards yet. ");
                 StudyAid.homepage();
             }
-            System.out.println();
             System.out.println("Which quiz do you want to enter? ");
+            System.out.println("(Enter a number)");
             Scanner quizSize = new Scanner(System.in);
-            int size = Integer.parseInt(quizSize.nextLine());
-            if (size < 0 || size > FlashCard.numberOfCards) {
+            String size = quizSize.nextLine();
+            if (size == null || !FlashCard.isStringInt(size)) {
                 System.out.println("Enter not valid. ");
                 StudyAid.homepage();
             }else{
-                Quiz.start(size);
+                int siize = Integer.parseInt(size);
+                if (siize < 0 || siize > FlashCard.numberOfCards){
+                    System.out.println("Enter not valid. ");
+                    StudyAid.homepage();
+                }
+                Quiz.start(siize);
             }
 
         }else{
             System.out.println("Input not valid. ");
+            homepage();
         }
     }
 
     public static void main (String[] args){
-        System.out.println();
+        System.out.println(StudyAid.frame);
         System.out.println("Hello, welcome to StudyAid! StudyAid is an app which helps you develop your own knowledge through flashcards.");
         homepage();
     }
