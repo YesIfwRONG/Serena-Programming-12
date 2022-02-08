@@ -47,7 +47,7 @@ public class StudyAid {
                 System.out.println("Sorry, You don't have any Flashcards yet. ");
                 StudyAid.homepage();
             }
-            System.out.println("Which quiz do you want to enter? ");
+            System.out.println("Which flashcard do you want to access? ");
             System.out.println("(Enter a number)");
             Scanner quizSize = new Scanner(System.in);
             String size = quizSize.nextLine();
