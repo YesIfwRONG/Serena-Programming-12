@@ -25,7 +25,7 @@ public class StudyAid {
         System.out.println("HOMEPAGE: ");
         System.out.println("1. Go to Flashcards;");
         System.out.println("2. Take a Quiz;");
-        System.out.println("Enter an option ( 1/ 2 ): ");
+        System.out.println("Enter an option ( 1 / 2 ): ");
         Scanner myObj = new Scanner(System.in);
         String myOb = myObj.nextLine();
         if(myOb == null || !FlashCard.isStringInt(myOb)){
@@ -47,26 +47,77 @@ public class StudyAid {
                 System.out.println("Sorry, You don't have any Flashcards yet. ");
                 StudyAid.homepage();
             }
-            System.out.println("Which flashcard do you want to access? ");
+            quizSection();
+        }else{
+            System.out.println("Input not valid. ");
+            homepage();
+        }
+    }
+
+    public static void quizSection() {
+        System.out.println(StudyAid.frame);
+        System.out.println("Welcome to StudyAid quiz.");
+        System.out.println();
+        System.out.println("Your options: ");
+        Scanner myObj = new Scanner(System.in);
+
+        int key = 0;
+
+        if(FlashCard.numberOfCards<5){
+            System.out.println("1. Do an one-question quiz. ");
+            System.out.println("0. Leave ");
+            System.out.println("Enter an option ( 1 / 0 ): ");
+            key = 1;
+        }else if (FlashCard.numberOfCards<10){
+            System.out.println("1. Do an one-question quiz. ");
+            System.out.println("2. Do an five-question quiz. ");
+            System.out.println("0. Leave ");
+            System.out.println("Enter an option ( 1 / 2 / 0 ): ");
+            key = 2;
+        }else {
+            System.out.println("1. Do an one-question quiz. ");
+            System.out.println("2. Do an five-question quiz. ");
+            System.out.println("3. Do an ten-question quiz. ");
+            System.out.println("0. Leave ");
+            System.out.println("Enter an option ( 1 / 2 / 3 / 0 ): ");
+            key = 3;
+        }
+
+        String myOb = myObj.nextLine();
+        if(myOb == null || !FlashCard.isStringInt(myOb)){
+            System.out.println("Something went wrong...");
+            System.out.println("Back to the last page...");
+            homepage();
+        }
+        int op = Integer.parseInt(myOb);
+        if (op == 1) {
+            System.out.println("Which quiz do you want to enter? ");
             System.out.println("(Enter a number)");
             Scanner quizSize = new Scanner(System.in);
             String size = quizSize.nextLine();
             if (size == null || !FlashCard.isStringInt(size)) {
                 System.out.println("Enter not valid. ");
-                StudyAid.homepage();
-            }else{
+                StudyAid.quizSection();
+            } else {
                 int siize = Integer.parseInt(size);
-                if (siize < 0 || siize > FlashCard.numberOfCards){
+                if (siize < 0 || siize > FlashCard.numberOfCards) {
                     System.out.println("Enter not valid. ");
                     StudyAid.homepage();
                 }
                 Quiz.start(siize);
             }
-
-        }else{
-            System.out.println("Input not valid. ");
-            homepage();
+        } else if (op == 2 && key != 1) {
+            Quiz.multipleQuiz(5);
+        } else if (op == 3 && key == 3) {
+            Quiz.multipleQuiz(10);
+        } else if (op == 0){
+            StudyAid.homepage();
+        } else {
+            System.out.println();
+            System.out.println("No, this is not gonna work. ");
+            quizSection();
         }
+
     }
 
     public static void main (String[] args){

@@ -15,10 +15,10 @@ public class FlashCard {
     public static void initiate(){
         System.out.println(StudyAid.frame);
         System.out.println("Flashcard: ");
-        System.out.println("1. Create a new Flashcard.");
+        System.out.println("1. Create new flashcards.");
         System.out.println("2. Check the old Flashcards.");
         System.out.println("3. Leave.");
-        System.out.println("Enter an option ( 1/ 2/ 3 ): ");
+        System.out.println("Enter an option ( 1 / 2 / 3 ): ");
         Scanner myObj = new Scanner(System.in);
         String myOb = myObj.nextLine();
         if(myOb == null || !FlashCard.isStringInt(myOb)){
@@ -31,8 +31,11 @@ public class FlashCard {
         if (op == 1){
             int key = 0;
             while (key != -1) {
+
                 System.out.println(StudyAid.frame);
                 System.out.println("Enter -1 to leave; Enter other keys to continue.");
+                System.out.println(StudyAid.frame);
+
                 Scanner ifLeave = new Scanner(System.in);
                 String ifL = ifLeave.nextLine();
                 int doILeave;
@@ -71,7 +74,7 @@ public class FlashCard {
             System.out.println(StudyAid.frame);
             System.out.println("1. Check the question and the answer. ");
             System.out.println("2. Leave. ");
-            System.out.println("Enter an option ( 1/ 2 ): ");
+            System.out.println("Enter an option ( 1 / 2 ): ");
             Scanner ifCheck = new Scanner(System.in);
             String ifCh = ifCheck.nextLine();
             if(ifCh == null || !FlashCard.isStringInt(ifCh)){
@@ -92,6 +95,7 @@ public class FlashCard {
                     FlashCard.initiate();
                 }else {
                     int whichS = Integer.parseInt(whichSe) -1;
+                    System.out.println(StudyAid.frame);
                     System.out.println("Your flashcard name is: " + questions.get(whichS).getName());
                     System.out.println("Your question is: " + questions.get(whichS).getQs());
                     System.out.println("Your answer to this question is: " + questions.get(whichS).getAns());
@@ -99,6 +103,10 @@ public class FlashCard {
                 }
 
             }else if (ifC == 2) {
+                FlashCard.initiate();
+            }else{
+                System.out.println("Something went wrong...");
+                System.out.println("Back to the last page...");
                 FlashCard.initiate();
             }
 
