@@ -15,7 +15,7 @@ public class Circle extends TwoDShape{
     @Override
     public String toString() {
         return "Circle{" +
-                "radius=" + radius +
+                getArea()+
                 '}';
     }
 }

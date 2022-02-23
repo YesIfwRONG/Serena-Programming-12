@@ -1,6 +1,6 @@
 package moduleThree;
 
-public class Triangle extends TwoDShape {
+public class Triangle extends TwoDShape implements Rotate{
     double side1;
     double side2;
     double side3;
@@ -37,4 +37,16 @@ public class Triangle extends TwoDShape {
     public String toString() {
         return "Triangle{" +getArea() + "} ";
     }
+
+    public void rotate90(){
+        System.out.println("Rotated 90 degrees.");
+    };
+
+    public void rotate180(){
+        System.out.println("Rotated 180 degrees.");
+    };
+
+    public void rotate(double degree){
+        System.out.println("Rotated "+degree+" degrees.");
+    };
 }
