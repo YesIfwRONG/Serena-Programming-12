@@ -4,6 +4,10 @@
     <list default="true" id="cd413230-e946-43f7-bdb7-de058c966bfc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+>>>>>>> 741cb73e333b488a4c793d5debf61b20f436faca
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,20 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="DeckOfCard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,10 +65,14 @@
       <option name="presentableId" value="Default" />
       <updated>1646431472034</updated>
       <workItem from="1646431478176" duration="951000" />
+<<<<<<< HEAD
       <workItem from="1646676767441" duration="5238000" />
       <workItem from="1646691640480" duration="309000" />
       <workItem from="1646691995742" duration="1344000" />
       <workItem from="1646776264118" duration="13000" />
+=======
+      <workItem from="1646676767441" duration="12759000" />
+>>>>>>> 741cb73e333b488a4c793d5debf61b20f436faca
     </task>
     <servers />
   </component>
