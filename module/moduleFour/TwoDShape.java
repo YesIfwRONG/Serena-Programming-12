@@ -41,9 +41,7 @@ public abstract class TwoDShape {
         this.colour = colour;
     }
 
-    public double getArea(){
-        return width * height;
-    }
+    public abstract double getArea();
 
     public String toString(){
         return "TwoDShape";
