@@ -1,7 +1,7 @@
 public class Card {
-
-    Faces faceType;
-    Suites suiteType;
+    private int cardValue;
+    private Faces faceType;
+    private Suites suiteType;
 
     enum Faces{
         // descending
@@ -14,6 +14,7 @@ public class Card {
 
     public Card(Suites suite, int value){
         this.suiteType = suite;
+        this.cardValue = value;
         // There is no value 1 or 0 as the input;
         if (value < 11) {
             this.faceType = Faces.NONE;
@@ -28,5 +29,21 @@ public class Card {
         }
     }
 
+    public int getCardValue() {
+        return cardValue;
+    }
 
+    public Faces getFaceType() {
+        return faceType;
+    }
+
+    public Suites getSuiteType() {
+        return suiteType;
+    }
+
+
+    @Override
+    public String toString() {
+        return cardValue + ", " + suiteType;
+    }
 }
