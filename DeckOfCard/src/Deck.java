@@ -14,7 +14,7 @@ public class Deck {
         Collections.shuffle(deck);
     }
     public void generateDeck(){
-        ArrayList<Card> deck = new ArrayList<>(52);
+        ArrayList<Card> deck = new ArrayList<>(52);---------------------------------------------------
         for (int i = 2; i < 15; i++) {
             deck.add(new Card(Card.Suites.SPADES, i));
         }for (int i = 2; i < 15; i++) {
