@@ -8,7 +8,7 @@ public class FindWords {
         while (myObj.hasNext()) {
             Words.convertWords(myObj.next());
         }
-        Words.checkHashSet();
+//        Words.checkHashSet();
         System.out.println(Words.getDifferentWords());
     }
 
