@@ -1,3 +1,5 @@
+package withoutMap;
+
 public class Encryption {
     public static void encrypt(String word, int rotNum){
         char[] wordChars = new char[word.length()];

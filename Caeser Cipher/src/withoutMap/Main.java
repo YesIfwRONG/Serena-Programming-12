@@ -1,3 +1,5 @@
+package withoutMap;
+
 public class Main {
     public static void main(String[] args) {
         Encryption.encrypt("asdfljkasdgkl", 2);

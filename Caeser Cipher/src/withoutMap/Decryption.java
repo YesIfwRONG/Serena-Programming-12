@@ -1,3 +1,5 @@
+package withoutMap;
+
 public class Decryption {
     public static void decrypt(String word, int rotNum){
         char[] wordChars = new char[word.length()];
