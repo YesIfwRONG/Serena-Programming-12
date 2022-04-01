@@ -4,7 +4,7 @@ public class Main {
 
     // testing the result
     public static void main(String[] args) {
-        fib(5);
+        fib(6);
         System.out.println(sum);
         initialize();
     }
