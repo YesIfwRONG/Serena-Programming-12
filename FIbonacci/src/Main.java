@@ -1,11 +1,9 @@
 public class Main {
-    // setting the sum to 0;
-    public static int sum = 0;
 
     // testing the result
     public static void main(String[] args) {
-        fib(6);
-        System.out.println(sum);
+        int[] fib = new int[10];
+
         initialize();
     }
 
