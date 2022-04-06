@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Node {
     private int key;
-    private List<Integer> nodes;
+    private List<Integer> nodes; // Also called "points" in the Main class.
     private boolean visited;
 
     public int getKey() {
@@ -43,7 +43,7 @@ public class Node {
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) { // If two objects' key are the same, return true;
         if(obj instanceof Node){
             Node other = (Node)obj;
             if(this.key == other.key){

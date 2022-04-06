@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd413230-e946-43f7-bdb7-de058c966bfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Module3.3Graphs/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3.3Graphs/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module3.3Graphs/out/production/Module3.3Graphs/com/zaremba/graphs/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module3.3Graphs/out/production/Module3.3Graphs/com/zaremba/graphs/Node.class" beforeDir="false" />
-    </list>
+    <list default="true" id="cd413230-e946-43f7-bdb7-de058c966bfc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +65,7 @@
       <workItem from="1646676767441" duration="12759000" />
       <workItem from="1649193695852" duration="77000" />
       <workItem from="1649197260159" duration="117000" />
+      <workItem from="1649197659511" duration="65000" />
     </task>
     <servers />
   </component>
