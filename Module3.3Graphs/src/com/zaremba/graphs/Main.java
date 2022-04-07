@@ -9,8 +9,14 @@ public class Main {
     public static ArrayList<Node> graph;
     public static ArrayList<Integer> access = new ArrayList<>();;
     public static void main(String[] args) throws FileNotFoundException {
-        setupTree();
-        BFS(0);
+        setupTree(); // Set up tree;
+        Scanner myObj = new Scanner(System.in);
+
+        System.out.println("Enter your root node: "); // Asking for root
+        int root = myObj.nextInt();
+
+        access.add(graph.get(root-1).getKey());
+        BFS(root-1);
         for (Integer i : access) {
             System.out.println(i+"");
         }
@@ -19,27 +25,35 @@ public class Main {
     // get the first one then access the second of the line then the third, then find the second one and access all second one's slavers, then the third one's slavers
     private static void BFS(int index) { // We can start from 0-15th term of the "graph", the case below is when we start at 1;
         Node line = graph.get(index);
-        if(!line.isVisited()) {
-            access.add(line.getKey());
+        line.setVisited(true); // Current line visited
+        addNodes(line);
+        for (Integer i : access) {
+            if(!graph.get(i-1).isVisited()) {
+                BFS(i-1);
+            }
         }
-        line.setVisited(true);
+//        addNodes(line);
+//        for(Integer i : line.getNodes()){ // loop through the nodes again but this time get into the nodes' lines
+//            if(!graph.get(i-1).isVisited()) {
+//                BFS(i-1);
+//            }
+//        }
+
+    }
+
+    private static void addNodes(Node line){
         for(Integer i : line.getNodes()){ // loop through the nodes and add them in;
             int key = 0;
             for (Integer j : access) { // if access has occurred the number (i == j ), it won't add
                 if(i == j){
                     key = 1;
+                    break;
                 }
             }
             if (key != 1) {
                 access.add(i);
             }
         }
-        for(Integer i : line.getNodes()){ // loop through the nodes again but this time get into the nodes' lines
-            if(!graph.get(i-1).isVisited()) {
-                BFS(i-1);
-            }
-        }
-
     }
 
     private static void setupTree() throws FileNotFoundException { // Read tree.txt, store the line then apply function "parseLine".
