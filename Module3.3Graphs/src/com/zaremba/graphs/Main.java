@@ -30,14 +30,9 @@ public class Main {
         for (Integer i : access) {
             if(!graph.get(i-1).isVisited()) {
                 BFS(i-1);
+                break;
             }
         }
-//        addNodes(line);
-//        for(Integer i : line.getNodes()){ // loop through the nodes again but this time get into the nodes' lines
-//            if(!graph.get(i-1).isVisited()) {
-//                BFS(i-1);
-//            }
-//        }
 
     }
 
