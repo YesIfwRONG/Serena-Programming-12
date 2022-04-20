@@ -1,7 +1,12 @@
-public class Card {
+public class Card implements Comparable<Card>{
     private int cardValue;
     private Faces faceType;
     private Suites suiteType;
+
+    @Override
+    public int compareTo(Card o) {
+        return this.cardValue-o.cardValue;
+    }
 
     enum Faces{
         // descending

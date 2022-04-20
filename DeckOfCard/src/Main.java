@@ -1,23 +1,29 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Deck deck = new Deck();
-        userChoice(deck);
+    public static void main(String[] args) { // test or user interface
+        test();
+        userChoice();
     }
 
-    public static void test(){
+    public static void test(){ // test to see the shuffled cards and the sorted cards
         Deck deck = new Deck();
+        System.out.println("Shuffled cards: ");
         deck.shuffle();
         deck.print();
         System.out.println();
         System.out.println("-------------------------------------------------");
         System.out.println();
+        System.out.println("Sorted cards: ");
         deck.sortDeck();
         deck.print();
+        System.out.println();
+        System.out.println("-------------------------------------------------");
+        System.out.println();
     }
 
-    public static void userChoice(Deck deck){
+    public static void userChoice(){ // ask the user whether to shuffle the cards, then let the user select a hand of cards by entering the size.
+        Deck deck = new Deck();
         Scanner myObj = new Scanner(System.in);
         System.out.println("Do you need to shuffle the cards? (Y/N) ");
         String ans = myObj.next();

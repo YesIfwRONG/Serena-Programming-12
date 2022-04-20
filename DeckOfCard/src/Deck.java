@@ -4,16 +4,27 @@ import java.util.Collections;
 public class Deck {
     private ArrayList<Card> deck;
     private ArrayList<Card> hand;
-    // construct a new deck
-    public Deck(){
-        generateDeck();
+
+    public Deck(){ // Generate a deck of cards by order
+        ArrayList<Card> deck = new ArrayList<>(52);
+        for (int i = 2; i < 15; i++) {
+            deck.add(new Card(Card.Suites.SPADES, i));
+        }for (int i = 2; i < 15; i++) {
+            deck.add(new Card(Card.Suites.HEARTS, i));
+        }for (int i = 2; i < 15; i++) {
+            deck.add(new Card(Card.Suites.CLUBS, i));
+        }for (int i = 2; i < 15; i++) {
+            deck.add(new Card(Card.Suites.DIAMONDS, i));
+        }
+        this.deck = deck;
     }
 
-    public void shuffle(){
+    public void shuffle(){ // Use collection to shuffle the deck of cards
         Collections.shuffle(deck);
     }
 
-    public void sortDeck(){
+
+    public void sortDeck(){ // Sort the suite, then sort the value
         ArrayList<Card> clubsTemp = new ArrayList<>();
         ArrayList<Card> heartsTemp = new ArrayList<>();
         ArrayList<Card> diamondsTemp = new ArrayList<>();
@@ -29,52 +40,32 @@ public class Deck {
                 diamondsTemp.add(card);
             }
         }
-        // sort the lists
+
+        // sort the lists by value
         clubsTemp =  sortByValue(clubsTemp);
         heartsTemp = sortByValue(heartsTemp);
         diamondsTemp = sortByValue(diamondsTemp);
         spadesTemp = sortByValue(spadesTemp);
+
         // create a new list to store the values
         ArrayList<Card> tt = new ArrayList<>();
         tt.addAll(spadesTemp);
         tt.addAll(heartsTemp);
         tt.addAll(clubsTemp);
         tt.addAll(diamondsTemp);
-        // assign the value to tt
+
+        // assign the value to the deck
         this.deck = tt;
 
     }
 
-    public ArrayList<Card> sortByValue(ArrayList<Card>temp){
-        ArrayList<Card> ret = new ArrayList<>();
-        for (int i = 0; i < temp.size(); i++) {
-            for (Card card : temp) {
-                int cardValue = card.getCardValue();
-                if (cardValue == i + 2) {
-                    ret.add(card);
-                }
-            }
-        }
-        return ret;
+    public ArrayList<Card> sortByValue(ArrayList<Card>temp){ // Sort the given list by value
+        Collections.sort(temp);
+        return temp;
     }
 
 
-    public void generateDeck(){
-        ArrayList<Card> deck = new ArrayList<>(52);---------------------------------------------------
-        for (int i = 2; i < 15; i++) {
-            deck.add(new Card(Card.Suites.SPADES, i));
-        }for (int i = 2; i < 15; i++) {
-            deck.add(new Card(Card.Suites.HEARTS, i));
-        }for (int i = 2; i < 15; i++) {
-            deck.add(new Card(Card.Suites.CLUBS, i));
-        }for (int i = 2; i < 15; i++) {
-            deck.add(new Card(Card.Suites.DIAMONDS, i));
-        }
-
-        this.deck = deck;
-    }
-
-    public void setHand(int size){
+    public void setHand(int size){ // Set a hand of cards with given size
         ArrayList<Card> hand = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             hand.add(deck.get(i));

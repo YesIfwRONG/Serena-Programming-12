@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd413230-e946-43f7-bdb7-de058c966bfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
->>>>>>> 741cb73e333b488a4c793d5debf61b20f436faca
-    </list>
+    <list default="true" id="cd413230-e946-43f7-bdb7-de058c966bfc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,14 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1646431472034</updated>
       <workItem from="1646431478176" duration="951000" />
-<<<<<<< HEAD
       <workItem from="1646676767441" duration="5238000" />
       <workItem from="1646691640480" duration="309000" />
       <workItem from="1646691995742" duration="1344000" />
       <workItem from="1646776264118" duration="13000" />
-=======
       <workItem from="1646676767441" duration="12759000" />
->>>>>>> 741cb73e333b488a4c793d5debf61b20f436faca
+      <workItem from="1649193695852" duration="77000" />
+      <workItem from="1649197260159" duration="117000" />
+      <workItem from="1649197659511" duration="65000" />
     </task>
     <servers />
   </component>
