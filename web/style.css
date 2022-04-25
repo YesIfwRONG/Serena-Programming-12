@@ -7,7 +7,7 @@ body{
     background-image: url("anime-girls-no-game-no-life-shiro-no-game-no-life-sora-no-game-no-life-wallpaper-preview.jpg");
     background-position: top;
     animation-name: st;
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 @keyframes st{
     0%{
@@ -20,7 +20,7 @@ body{
 nav{
     opacity: 95%;
     animation-name: wds;
-    animation-duration: 5s;
+    animation-duration: 8s;
 }
 div{
     width: 100%;
