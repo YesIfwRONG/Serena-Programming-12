@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../java/javafiles" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -66,6 +66,7 @@
       <workItem from="1649193695852" duration="77000" />
       <workItem from="1649197260159" duration="117000" />
       <workItem from="1649197659511" duration="65000" />
+      <workItem from="1651675065077" duration="92000" />
     </task>
     <servers />
   </component>
