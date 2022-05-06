@@ -2,31 +2,41 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    background-image: url("anime-girls-no-game-no-life-shiro-no-game-no-life-sora-no-game-no-life-wallpaper-preview.jpg");
+#index_body{
+    background-image: url("d86490a4732a014b9b6fdd585766c8989c5fde74_hq.jpg");
     background-position: top;
     animation-name: st;
     animation-duration: 5s;
 }
+
 @keyframes st{
     0%{
         background-image: url("backPic.png");
-    }
-    100%{
-        background-image: url("anime-girls-no-game-no-life-shiro-no-game-no-life-sora-no-game-no-life-wallpaper-preview.jpg");
+    }10%{
+    }100%{
+        background-image: url("d86490a4732a014b9b6fdd585766c8989c5fde74_hq.jpg");
     }
 }
+
 nav{
     opacity: 95%;
+    display: block;
     animation-name: wds;
     animation-duration: 8s;
+
 }
 div{
-    width: 100%;
+    width: 80%;
     height: 75px;
+    margin: 20px auto;
     background-color: #ededed;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Comic Sans MS";
+}
 
+a{
+    text-decoration: none;
 }
 
 @keyframes wds{
@@ -38,41 +48,33 @@ div{
     }
 }
 
-article{
-    width: 60%;
-    height: 100px;
-    background-color: #cd96bc;
-    float: left;
-}
-article:hover{
-    background-color: #ededed;
-}
-aside{
-    width: 40%;
-    height: 100px;
-    background-color: #acd0f4;
-    float: right;
-}
+/*article{*/
+/*    width: 60%;*/
+/*    height: 100px;*/
+/*    background-color: #cd96bc;*/
+/*    float: left;*/
+/*}*/
+/*article:hover{*/
+/*    background-color: #ededed;*/
+/*}*/
+/*aside{*/
+/*    width: 40%;*/
+/*    height: 100px;*/
+/*    background-color: #acd0f4;*/
+/*    float: right;*/
+/*}*/
 
-aside:hover{
-    background-color: #ededed;
-}
+/*aside:hover{*/
+/*    background-color: #ededed;*/
+/*}*/
 
 footer{
     clear: both;
 }
 
-h1{
-    font-family: "Comic Sans MS";
-    font-size: 45px;
-    color: #436184;
-    text-align: center;
-}
-
 
 p{
-    font-family: "Comic Sans MS";
+
     font-size: 30px;
     color: #436184;
-    text-align: center;
 }

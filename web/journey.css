@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("837896.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 300px;
+    margin: 50px auto;
+    background: #acd0f4;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position:relative;
+    opacity: 0%;
+    animation-name: wds;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#box2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #acd0f4;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #acd0f4;
+    border-bottom: 10px solid transparent;
+    right: -20px;
+    top: 6px;
+}
+
+#box4:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #acd0f4;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #acd0f4;
+    border-bottom: 10px solid transparent;
+    right: -20px;
+    top: 6px;
+}
+
+#box2{
+    animation-delay: 1.5s;
+}
+#box3{
+    animation-delay: 3s;
+}
+#box4{
+    animation-delay: 4.5s;
+}
+
