@@ -4,32 +4,61 @@
 }
 
 body {
-    background-image: url("837896.png");
-    background-size: 100%;
+    background-image: url("CHESS.png");
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#SoraAndShiro{
+    width: 25%;
+    margin-left: 2.5%;
+    float: left;
+}
+
+#RikuAndSchwi{
+    width: 25%;
+    margin-right: 2.5%;
+    float: right;
 }
 
 .box {
-    width: 300px;
-    margin: 50px auto;
+    width: 35%;
+    height: auto;
+    margin: 70px auto;
     background: #acd0f4;
     padding: 20px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 200;
     color: #fff;
     font-family: arial;
     position:relative;
-    opacity: 0%;
+    opacity: 0;
     animation-name: wds;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
+#box1:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-right: 10px solid #acd0f4;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #acd0f4;
+    border-bottom: 10px solid transparent;
+    left: -20px;
+    top: 6px;
+}
+
 #box2:before {
     content: "";
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
     border-left: 10px solid #acd0f4;
     border-right: 10px solid transparent;
@@ -39,10 +68,23 @@ body {
     top: 6px;
 }
 
+#box3:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-right: 10px solid #acd0f4;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #acd0f4;
+    border-bottom: 10px solid transparent;
+    left: -20px;
+    top: 6px;
+}
+
 #box4:before {
     content: "";
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
     border-left: 10px solid #acd0f4;
     border-right: 10px solid transparent;

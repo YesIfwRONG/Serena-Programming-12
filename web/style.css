@@ -3,7 +3,7 @@
     padding: 0;
 }
 #index_body{
-    background-image: url("d86490a4732a014b9b6fdd585766c8989c5fde74_hq.jpg");
+    background-image: url("indexBackgroudPic.jpg");
     background-position: top;
     animation-name: st;
     animation-duration: 5s;
@@ -11,10 +11,10 @@
 
 @keyframes st{
     0%{
-        background-image: url("backPic.png");
+        background-image: url("START.png");
     }10%{
     }100%{
-        background-image: url("d86490a4732a014b9b6fdd585766c8989c5fde74_hq.jpg");
+        background-image: url("indexBackgroudPic.jpg");
     }
 }
 
@@ -27,16 +27,26 @@ nav{
 }
 div{
     width: 80%;
-    height: 75px;
+    height: auto;
     margin: 20px auto;
+    padding: 20px;
     background-color: #ededed;
     text-align: center;
-    font-size: 40px;
+    font-size: 1em;
     font-family: "Comic Sans MS";
+}
+
+#nav{
+    font-size: 45px;
 }
 
 a{
     text-decoration: none;
+}
+
+a:hover{
+    color: #ededed;
+    transition: 300ms;
 }
 
 @keyframes wds{
@@ -48,25 +58,7 @@ a{
     }
 }
 
-/*article{*/
-/*    width: 60%;*/
-/*    height: 100px;*/
-/*    background-color: #cd96bc;*/
-/*    float: left;*/
-/*}*/
-/*article:hover{*/
-/*    background-color: #ededed;*/
-/*}*/
-/*aside{*/
-/*    width: 40%;*/
-/*    height: 100px;*/
-/*    background-color: #acd0f4;*/
-/*    float: right;*/
-/*}*/
 
-/*aside:hover{*/
-/*    background-color: #ededed;*/
-/*}*/
 
 footer{
     clear: both;
