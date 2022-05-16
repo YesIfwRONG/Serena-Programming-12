@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon May 16 15:19:15 PDT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0180-cef4-402e-00000f29d608 
+on database directory D:\work\applications\GitHub\Serena-Programming-12\Database\database\forum with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5b6f7412 
+Loaded from file:/D:/work/applications/GitHub/Serena-Programming-12/Database/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.2+8-86
+user.dir=D:\work\applications\GitHub\Serena-Programming-12\Database
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
