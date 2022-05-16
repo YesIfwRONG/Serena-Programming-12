@@ -1,10 +1,12 @@
 package com.serena.database;
 
+import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Main {
     public static DatabaseHandler handler;
+
     public static void addMember(String id, String name, String email, String nickName){
         String qu = "INSERT INTO MEMBER VALUES (" +
                 "'" + id + "'," +
@@ -14,8 +16,7 @@ public class Main {
         handler.execAction(qu);
     }
 
-    public static void main(String[] args) {
-        handler = DatabaseHandler.getHandler();
+    public static void retrieveInfo() {
         String qu = "SELECT * FROM MEMBER";
         ResultSet resultSet = handler.execQuery(qu);
         try{
@@ -27,5 +28,16 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void addFiles(){ // need to work on this one
+        String path = System.getProperty("user.dir");
+        System.out.println(path);
+        File file = new File("123");
+    }
+
+    public static void main(String[] args) {
+        handler = DatabaseHandler.getHandler();
+
     }
 }

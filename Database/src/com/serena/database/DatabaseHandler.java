@@ -16,10 +16,8 @@ public class DatabaseHandler {
     public static DatabaseHandler getHandler() {
         if (handler == null) {
             handler = new DatabaseHandler();
-            return handler;
-        } else {
-            return handler;
         }
+        return handler;
     }
 
     private void createTable() {
