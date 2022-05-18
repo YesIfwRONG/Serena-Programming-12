@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("CHESS.png");
+    background-image: url("../src/CHESS.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -15,14 +15,30 @@ body {
 
 #SoraAndShiro{
     width: 25%;
+    margin-top: 2.5%;
     margin-left: 2.5%;
     float: left;
+    transition-duration: 300ms;
+    animation-name: wds;
+    animation-duration: 1s;
+}
+
+#SoraAndShiro:hover{
+    opacity: 0.5;
 }
 
 #RikuAndSchwi{
     width: 25%;
+    margin-top: 2.5%;
     margin-right: 2.5%;
     float: right;
+    transition-duration: 300ms;
+    animation-name: wds;
+    animation-duration: 1s;
+}
+
+#RikuAndSchwi:hover{
+    opacity: 0.5;
 }
 
 .box {

@@ -3,7 +3,7 @@
     padding: 0;
 }
 #index_body{
-    background-image: url("indexBackgroudPic.jpg");
+    background-image: url("../src/indexBackgroudPic.jpg");
     background-position: top;
     animation-name: st;
     animation-duration: 5s;
@@ -11,10 +11,10 @@
 
 @keyframes st{
     0%{
-        background-image: url("START.png");
+        background-image: url("../src/START.png");
     }10%{
     }100%{
-        background-image: url("indexBackgroudPic.jpg");
+        background-image: url("../src/indexBackgroudPic.jpg");
     }
 }
 
@@ -70,3 +70,5 @@ p{
     font-size: 30px;
     color: #436184;
 }
+
+
