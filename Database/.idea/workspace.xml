@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d46625-e525-473e-9217-e955ec0315ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8265de4b-3593-47a0-873d-b0b1a9ba93b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8265de4b-3593-47a0-873d-b0b1a9ba93b6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/forum/log/log2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/log/log2.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c150.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c161.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c171.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/cb1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/serena/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/serena/database/DatabaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/serena/database/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/serena/database/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/serena/database/DatabaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/serena/database/DatabaseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/serena/database/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/serena/database/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../web/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/derbyclient.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../nerdyGame" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -97,6 +89,7 @@
       <updated>1652735375406</updated>
       <workItem from="1652735376471" duration="96000" />
       <workItem from="1652735536930" duration="6212000" />
+      <workItem from="1653080539387" duration="46000" />
     </task>
     <servers />
   </component>

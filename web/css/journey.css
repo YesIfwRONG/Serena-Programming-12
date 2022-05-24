@@ -15,7 +15,7 @@ body {
 
 #SoraAndShiro{
     width: 25%;
-    margin-top: 2.5%;
+    margin-top: 5%;
     margin-left: 2.5%;
     float: left;
     transition-duration: 300ms;
@@ -29,7 +29,7 @@ body {
 
 #RikuAndSchwi{
     width: 25%;
-    margin-top: 2.5%;
+    margin-top: 5%;
     margin-right: 2.5%;
     float: right;
     transition-duration: 300ms;
@@ -44,14 +44,14 @@ body {
 .box {
     width: 35%;
     height: auto;
-    margin: 70px auto;
+    top: 10%;
+    left: 32%;
     background: #acd0f4;
     padding: 20px;
     text-align: center;
     font-weight: 200;
-    color: #fff;
     font-family: arial;
-    position:relative;
+    position:absolute;
     opacity: 0;
     animation-name: wds;
     animation-duration: 3s;
