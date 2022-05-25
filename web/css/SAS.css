@@ -1,4 +1,29 @@
 body{
     background-image: url("../src/no-game-no-life-blank-team-4wgjbsvi1mgbntfd.jpg");
     background-position: top;
+    font-family: "Macondo";;
+}
+#plot1{
+    position: absolute;
+    font-size: 150%;
+    border-radius: 25px;
+    width: 30%;
+    top: 10%;
+    left: 10%
+}
+#plot2 {
+    position: absolute;
+    font-size: 150%;
+    border-radius: 25px;
+    width: 50%;
+    top: 35%;
+    right: 10%
+}
+#plot3 {
+    position: absolute;
+    font-size: 150%;
+    border-radius: 25px;
+    width: 30%;
+    top: 60%;
+    left: 10%
 }

@@ -19,12 +19,12 @@ body {
     margin-left: 2.5%;
     float: left;
     transition-duration: 300ms;
-    animation-name: wds;
-    animation-duration: 1s;
+    border-radius: 20px;
+    opacity: 0.5;
 }
 
 #SoraAndShiro:hover{
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #RikuAndSchwi{
@@ -33,18 +33,18 @@ body {
     margin-right: 2.5%;
     float: right;
     transition-duration: 300ms;
-    animation-name: wds;
-    animation-duration: 1s;
+    border-radius: 20px;
+    opacity: 0.5;
 }
 
 #RikuAndSchwi:hover{
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .box {
     width: 35%;
     height: auto;
-    top: 10%;
+    top: 25%;
     left: 32%;
     background: #acd0f4;
     padding: 20px;

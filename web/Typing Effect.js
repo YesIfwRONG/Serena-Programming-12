@@ -12,7 +12,7 @@ function delay(time) {
 
 var startLoop = setInterval( function() {
     typeWriter();
-},15);
+},200);
 
 
 function typeWriter() {
