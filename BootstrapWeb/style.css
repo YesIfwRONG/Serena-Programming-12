@@ -1,0 +1,26 @@
+#header-container{
+    width: 200px;
+    min-width: 200px;
+}
+.page-container{
+    margin-top: 18px;
+}
+.primarySiteLinks{
+    margin-top: 30px;
+}
+.mobile-header{
+    text-align: center;
+}
+.nav-item{
+    text-align: center;
+    border-bottom-width: 0;
+    padding: 0;
+    font-family: "BrandonGrotesque-Black", Arial, Helvetica, sans-serif;
+    font-size: 94%;
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+a.nav-link {
+    color: #0b6a38;
+}
