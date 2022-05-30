@@ -1,9 +1,31 @@
+@import url(//db.onlinewebfonts.com/c/1237834ac4352b8c502409579622e269?family=Brandon+Grotesque+Black);
+@import url(//db.onlinewebfonts.com/c/21aeabdc53c497f1aa0c294ce2e21251?family=Frutiger+LT+Std+55+Roman);
+@font-face {font-family: "Brandon Grotesque Black"; src: url("//db.onlinewebfonts.com/t/1237834ac4352b8c502409579622e269.eot"); src: url("//db.onlinewebfonts.com/t/1237834ac4352b8c502409579622e269.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1237834ac4352b8c502409579622e269.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1237834ac4352b8c502409579622e269.woff") format("woff"), url("//db.onlinewebfonts.com/t/1237834ac4352b8c502409579622e269.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1237834ac4352b8c502409579622e269.svg#Brandon Grotesque Black") format("svg"); }
+@font-face {font-family: "Frutiger LT Std 55 Roman"; src: url("//db.onlinewebfonts.com/t/21aeabdc53c497f1aa0c294ce2e21251.eot"); src: url("//db.onlinewebfonts.com/t/21aeabdc53c497f1aa0c294ce2e21251.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/21aeabdc53c497f1aa0c294ce2e21251.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/21aeabdc53c497f1aa0c294ce2e21251.woff") format("woff"), url("//db.onlinewebfonts.com/t/21aeabdc53c497f1aa0c294ce2e21251.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/21aeabdc53c497f1aa0c294ce2e21251.svg#Frutiger LT Std 55 Roman") format("svg"); }
+body {
+    background-color: white;
+    color: #0b6a38;
+    font-family: "Frutiger LT Std 55 Roman", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
 #header-container{
     width: 200px;
     min-width: 200px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    z-index: 3;
 }
 .page-container{
     margin-top: 18px;
+    padding: 0;
+    display: flex;
+
 }
 .primarySiteLinks{
     margin-top: 30px;
@@ -14,8 +36,8 @@
 .nav-item{
     text-align: center;
     border-bottom-width: 0;
-    padding: 0;
-    font-family: "BrandonGrotesque-Black", Arial, Helvetica, sans-serif;
+    padding: 15px 0;
+    font-family: "Brandon Grotesque Black", Arial, Helvetica, sans-serif;
     font-size: 94%;
     text-transform: uppercase;
     line-height: 140%;
@@ -23,4 +45,67 @@
 }
 a.nav-link {
     color: #0b6a38;
+}
+.quick-bar {
+    width: 518.42px;
+    height: 116px;
+    display: inline-block;
+    padding: 15px 9px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    white-space: nowrap;
+}
+/*div.quick-bar .store-location a:first-child {*/
+/*    margin-top: 0;*/
+/*    font-family: "FrutigerLTCom-Bold", Arial, Helvetica, sans-serif;*/
+/*    font-size: 100%;*/
+/*    line-height: 169%;*/
+/*    text-transform: none;*/
+/*}*/
+.account-links {
+    width: 191.81px;
+    /*width: auto;*/
+    height: 67.08px;
+    padding: 16px 15px 25px 15px;
+}
+.store-location {
+    width: 195.25px;
+    /*width: auto;*/
+    height: 86px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 25px 15px;
+}
+.navbar-toggler-icon:before{
+    background-image: url(https://www.krispykreme.com/App_Themes/krispykremenew/Content/icons/doughnut-marker.svg);
+}
+div.quick-bar .store-location .navbar-toggler-icon:before {
+    content: ' ';
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+.shop-cart {
+    width: 70px;
+    height: 80px;
+}
+.answers-trigger img {
+    width: 30px;
+    height: 19px;
+    margin-top: -10px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+a {
+    color: #0b6a38;
+    text-decoration: none;
+    background-color: transparent;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
 }
