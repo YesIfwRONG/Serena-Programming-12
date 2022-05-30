@@ -55,6 +55,10 @@ a.nav-link {
     top: 0;
     right: 15px;
     white-space: nowrap;
+    font-weight: bold;
+}
+.container{
+    display: inline;
 }
 /*div.quick-bar .store-location a:first-child {*/
 /*    margin-top: 0;*/
@@ -63,11 +67,16 @@ a.nav-link {
 /*    line-height: 169%;*/
 /*    text-transform: none;*/
 /*}*/
+.sign-in{
+    vertical-align: middle;
+    margin: 9px;
+}
 .account-links {
     width: 191.81px;
     /*width: auto;*/
     height: 67.08px;
     padding: 16px 15px 25px 15px;
+    float: left;
 }
 .store-location {
     width: 195.25px;
@@ -76,9 +85,11 @@ a.nav-link {
     vertical-align: middle;
     display: inline-block;
     padding: 25px 15px;
+    position: relative;
 }
 .navbar-toggler-icon:before{
     background-image: url(https://www.krispykreme.com/App_Themes/krispykremenew/Content/icons/doughnut-marker.svg);
+    position: relative;
 }
 div.quick-bar .store-location .navbar-toggler-icon:before {
     content: ' ';
@@ -91,6 +102,9 @@ div.quick-bar .store-location .navbar-toggler-icon:before {
 .shop-cart {
     width: 70px;
     height: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 16px 15px 25px 15px;
 }
 .answers-trigger img {
     width: 30px;
