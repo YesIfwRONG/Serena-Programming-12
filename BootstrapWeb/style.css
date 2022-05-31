@@ -12,6 +12,7 @@ body {
     text-align: left;
 }
 #header-container{
+    /*background-color: white;*/
     width: 200px;
     min-width: 200px;
     position: fixed;
@@ -21,11 +22,29 @@ body {
     height: 100%;
     z-index: 3;
 }
+.row{
+    margin-right: 0;
+    padding-right: 0;
+}
+.col{
+    padding: 0 3px;
+    margin-top: 5px;
+    width: auto;
+}
+.main-container{
+    flex: 1;
+    padding: 82px 30px 0;
+    min-width: 0;
+}
 .page-container{
-    margin-top: 18px;
-    padding: 0;
+    /*padding-top: 18px;*/
     display: flex;
-
+    position: relative;
+    padding: 18px 15px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
 }
 .primarySiteLinks{
     margin-top: 30px;
@@ -36,7 +55,7 @@ body {
 .nav-item{
     text-align: center;
     border-bottom-width: 0;
-    padding: 15px 0;
+    padding: 10px 0;
     font-family: "Brandon Grotesque Black", Arial, Helvetica, sans-serif;
     font-size: 94%;
     text-transform: uppercase;
@@ -57,8 +76,16 @@ a.nav-link {
     white-space: nowrap;
     font-weight: bold;
 }
-.container{
+.collage{
+    margin:0;
+}
+.container {
+    position: absolute;
+    right: 0;
     display: inline;
+}
+.contents{
+    display: flex;
 }
 /*div.quick-bar .store-location a:first-child {*/
 /*    margin-top: 0;*/
