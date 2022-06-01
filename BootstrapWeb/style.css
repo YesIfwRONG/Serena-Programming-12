@@ -322,7 +322,7 @@ li{
     font-family: Arial, Helvetica, sans-serif,"Juice ITC";
     font-style: normal;
     font-size: 100%;
-    line-height: 100%;
+    line-height: 110%;
     letter-spacing: 1px;
     color: #c8102e;
     display: block;
@@ -345,7 +345,7 @@ li{
 .copy .btn {
     padding-left: 40px;
     padding-right: 40px;
-    margin: 20px 8px 0 8px;
+    margin: 30px 8px 0 8px;
 }
 .btn-secondary{
     background-color: #fff;
@@ -364,7 +364,62 @@ li{
 }
 
 .promote{
-    top: 1600px;
+    top: 1625px;
+}
+
+.image{
+    margin-top: -33%;
+    margin-right: -2%;
+    float: right;
+}
+footer{
+    border-top: 1px solid #dfdfdf;
+    padding: 35px 15px 60px 10px;
+    position: absolute;
+    top: 2250px;
+    right: 0;
+    width: 80%;
+}
+.table{
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    display: flex;
+}
+td{
+    flex-basis: 33%;
+    width: 300px;
+    margin-top: 16px;
+    font-family: "Brandon Grotesque Black", Arial, Helvetica, sans-serif;
+    font-size: 75%;
+    line-height: 200%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: -ms-inline-flexbox;
+    border: none;
+}
+footer ul.social-media {
+    flex-basis: 20%;
+    margin-top: -175px;
+    text-align: right;
+}
+
+footer ul.social-media a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 107%;
+    color: #fff;
+    background-color: #0b6a38;
+    text-align: center;
+    border-radius: 100px;
+}
+.copyright{
+    flex-basis: 100%;
+    padding-top: 125px;
+    text-align: center;
+    font-size: 75%;
+    line-height: 167%;
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
