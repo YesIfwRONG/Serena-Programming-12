@@ -61,6 +61,7 @@ public class DatabaseHandler {
                 stmt.execute(statement);
             }
         } catch (SQLException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         }
     }
@@ -70,12 +71,16 @@ public class DatabaseHandler {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
             conn = DriverManager.getConnection(DB_url);
         } catch (SQLException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         } catch (InstantiationException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         } catch (IllegalAccessException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         }
     }
@@ -99,7 +104,8 @@ public class DatabaseHandler {
             stmt = conn.createStatement();
             resultSet = stmt.executeQuery(query);
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("There is no such table. ");
+//            e.printStackTrace();
             return null;
         }
         return resultSet;

@@ -43,10 +43,11 @@ public class Main {
                 String path = resultSet.getString("PATH");
                 String extension = resultSet.getString("EXTENSION");
                 String fileSize = resultSet.getString("FILE_SIZE");
-                System.out.println("File Name: " + name + "\t| File Path: " + path + "\t| File Extension: "+ extension+"\t| File Size: " + fileSize);
+                System.out.println("File Name: " + name + "\t| File Path: " + path + "\t| File Extension: "+ extension+"\t| File Size: " + fileSize +" bytes");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("There is no such table.");
+//            e.printStackTrace();
         }
     }
 
