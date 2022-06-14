@@ -9,8 +9,7 @@ public class DatabaseHandler {
 
     public DatabaseHandler() {
         createConnection();
-        createTable();
-
+        createFileList();
     }
 
     public static DatabaseHandler getHandler() {
@@ -34,6 +33,29 @@ public class DatabaseHandler {
                         + "name varchar(200), \n"
                         + "email varchar(200), \n"
                         + "nickname varchar(200))";
+                System.out.println(statement);
+                stmt.execute(statement);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void createFileList() {
+        String TABLE_NAME = "FILE";
+        try{
+            stmt = conn.createStatement();
+            DatabaseMetaData dmn = conn.getMetaData();
+            ResultSet tables = dmn.getTables(null,null,TABLE_NAME,null);
+            if(tables.next()){
+                System.out.println("Table "+TABLE_NAME+" exists");
+            }else{
+                String statement = "CREATE TABLE "+TABLE_NAME+"("
+                        + "num INT NOT NULL  GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) , \n "
+                        + "name varchar(200), \n"
+                        + "path varchar(200), \n"
+                        + "extension varchar(200), \n"
+                        + "file_size varchar(200))";
                 System.out.println(statement);
                 stmt.execute(statement);
             }

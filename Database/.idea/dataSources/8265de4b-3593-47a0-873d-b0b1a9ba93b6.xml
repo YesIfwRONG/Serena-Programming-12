@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Apache Derby (Embedded) - forum">
   <database-model serializer="dbm" dbms="DERBY" family-id="DERBY" format-version="4.32">
-    <root id="1"/>
+    <root id="1">
+      <ServerVersion>10.15.2.0</ServerVersion>
+    </root>
     <schema id="2" parent="1" name="APP">
       <Current>1</Current>
     </schema>
@@ -15,30 +17,54 @@
     <schema id="10" parent="1" name="SYSIBM"/>
     <schema id="11" parent="1" name="SYSPROC"/>
     <schema id="12" parent="1" name="SYSSTAT"/>
-    <table id="13" parent="2" name="MEMBER"/>
-    <column id="14" parent="13" name="ID">
+    <table id="13" parent="2" name="FILE"/>
+    <table id="14" parent="2" name="MEMBER"/>
+    <column id="15" parent="13" name="NUM">
+      <DataType>INTEGER|4s</DataType>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="16" parent="13" name="NAME">
+      <DataType>VARCHAR(200)|12s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="17" parent="13" name="PATH">
+      <DataType>VARCHAR(200)|12s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="18" parent="13" name="EXTENSION">
+      <DataType>VARCHAR(200)|12s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="19" parent="13" name="FILE_SIZE">
+      <DataType>VARCHAR(200)|12s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="20" parent="14" name="ID">
       <DataType>VARCHAR(200)|12s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="15" parent="13" name="NAME">
+    <column id="21" parent="14" name="NAME">
       <DataType>VARCHAR(200)|12s</DataType>
       <Position>2</Position>
     </column>
-    <column id="16" parent="13" name="EMAIL">
+    <column id="22" parent="14" name="EMAIL">
       <DataType>VARCHAR(200)|12s</DataType>
       <Position>3</Position>
     </column>
-    <column id="17" parent="13" name="NICKNAME">
+    <column id="23" parent="14" name="NICKNAME">
       <DataType>VARCHAR(200)|12s</DataType>
       <Position>4</Position>
     </column>
-    <index id="18" parent="13" name="SQL220516144557880">
+    <index id="24" parent="14" name="SQL220516144557880">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="19" parent="13" name="SQL220516144557880">
+    <key id="25" parent="14" name="SQL220516144557880">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
