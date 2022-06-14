@@ -6,6 +6,7 @@ public class DatabaseHandler {
     private static Connection conn = null;
     private static Statement stmt = null;
     public static DatabaseHandler handler;
+    public static String name; // Storing name through Main Class
 
     public DatabaseHandler() {
         createConnection();
@@ -42,7 +43,7 @@ public class DatabaseHandler {
     }
 
     private void createFileList() {
-        String TABLE_NAME = "FILE";
+        String TABLE_NAME = name; // Name of the folder stored previously
         try{
             stmt = conn.createStatement();
             DatabaseMetaData dmn = conn.getMetaData();
@@ -50,7 +51,7 @@ public class DatabaseHandler {
             if(tables.next()){
                 System.out.println("Table "+TABLE_NAME+" exists");
             }else{
-                String statement = "CREATE TABLE "+TABLE_NAME+"("
+                String statement = "CREATE TABLE "+TABLE_NAME+" ("
                         + "num INT NOT NULL  GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) , \n "
                         + "name varchar(200), \n"
                         + "path varchar(200), \n"

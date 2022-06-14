@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static DatabaseHandler handler;
 
-    public static void addMember(String id, String name, String email, String nickName){
+    public static void addMember(String id, String name, String email, String nickName){ // Add members to member table
         String qu = "INSERT INTO MEMBER VALUES (" +
                 "'" + id + "'," +
                 "'" + name + "'," +
@@ -20,7 +20,7 @@ public class Main {
     }
 
 
-    public static void retrieveInfoMember() {
+    public static void retrieveInfoMember() { // Retrieve info from member table
         String qu = "SELECT * FROM MEMBER";
         ResultSet resultSet = handler.execQuery(qu);
         try{
@@ -34,8 +34,8 @@ public class Main {
         }
     }
 
-    public static void retrieveInfoFile() {
-        String qu = "SELECT * FROM FILE";
+    public static void retrieveInfoFile(String table) { // Retrieve info from the table given by user
+        String qu = "SELECT * FROM "+ table;
         ResultSet resultSet = handler.execQuery(qu);
         try{
             while (resultSet.next()){
@@ -50,8 +50,8 @@ public class Main {
         }
     }
 
-    public static void addFiles(String name, String path, String extension, String fileSize){ // need to work on this one
-        String qu = "INSERT INTO FILE (name, path, extension, file_size) VALUES (" +
+    public static void addFiles(String name, String path, String extension, String fileSize){ // Add files infos from given folder through its absolute path
+        String qu = "INSERT INTO "+ DatabaseHandler.name +" (name, path, extension, file_size) VALUES (" +
                 "'" + name + "'," +
                 "'" + path + "'," +
                 "'" + extension + "'," +
@@ -59,12 +59,22 @@ public class Main {
         handler.execAction(qu);
     }
 
-
     public static void main(String[] args) {
-        handler = DatabaseHandler.getHandler();
         Scanner myObj = new Scanner(System.in);
-        String path = myObj.next();
-        File folder = new File(path);
-        ReadFolder.ReadFiles(folder);
+        System.out.println("Enter 1 to create a new table / Enter 2 to retrieve information: ");
+        if (myObj.nextLine().equals("1")) { // Option for user to either input the absolute path of the folder and create table or check the old SQLs.
+            System.out.println("Enter the absolute path of your folder: ");
+            String path = myObj.nextLine();
+            File folder = new File(path);
+            DatabaseHandler.name= folder.getName();
+            handler = DatabaseHandler.getHandler(); // Set up handler through folder name
+            ReadFolder.ReadFiles(folder);
+        } else {
+            System.out.println("Enter your folder name to retrieve your information: ");
+            String tableName = myObj.nextLine();
+            handler = DatabaseHandler.getHandler(); // Set up a null handler since no folder name is given
+            retrieveInfoFile(tableName);
+        }
+
     }
 }

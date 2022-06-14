@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42d46625-e525-473e-9217-e955ec0315ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/serena/database/ReadFolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8265de4b-3593-47a0-873d-b0b1a9ba93b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8265de4b-3593-47a0-873d-b0b1a9ba93b6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/log/log2.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/forum/log/log3.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c10.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c150.dat" afterDir="false" />
@@ -25,8 +24,7 @@
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c41.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c411.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c421.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c421.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c490.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c4a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c4a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/forum/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c4b0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c51.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c60.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/forum/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/forum/seg0/c71.dat" afterDir="false" />
@@ -37,7 +35,6 @@
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/serena/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/serena/database/DatabaseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/serena/database/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/serena/database/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../finalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../finalProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +73,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -131,6 +129,7 @@
       <workItem from="1654144342868" duration="1190000" />
       <workItem from="1654204595138" duration="3558000" />
       <workItem from="1655153416582" duration="8171000" />
+      <workItem from="1655227017225" duration="6390000" />
     </task>
     <servers />
   </component>
