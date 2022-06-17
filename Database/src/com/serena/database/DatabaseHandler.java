@@ -6,11 +6,11 @@ public class DatabaseHandler {
     private static Connection conn = null;
     private static Statement stmt = null;
     public static DatabaseHandler handler;
+    public static String name; // Storing name through Main Class
 
     public DatabaseHandler() {
         createConnection();
-        createTable();
-
+        createFileList();
     }
 
     public static DatabaseHandler getHandler() {
@@ -42,17 +42,45 @@ public class DatabaseHandler {
         }
     }
 
+    private void createFileList() {
+        String TABLE_NAME = name; // Name of the folder stored previously
+        try{
+            stmt = conn.createStatement();
+            DatabaseMetaData dmn = conn.getMetaData();
+            ResultSet tables = dmn.getTables(null,null,TABLE_NAME,null);
+            if(tables.next()){
+                System.out.println("Table "+TABLE_NAME+" exists");
+            }else{
+                String statement = "CREATE TABLE "+TABLE_NAME+" ("
+                        + "num INT NOT NULL  GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) , \n "
+                        + "name varchar(200), \n"
+                        + "path varchar(200), \n"
+                        + "extension varchar(200), \n"
+                        + "file_size varchar(200))";
+                System.out.println(statement);
+                stmt.execute(statement);
+            }
+        } catch (SQLException e) {
+//            System.out.println("There is no such table. ");
+            e.printStackTrace();
+        }
+    }
+
     private void createConnection() {
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
             conn = DriverManager.getConnection(DB_url);
         } catch (SQLException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         } catch (InstantiationException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         } catch (IllegalAccessException e) {
+//            System.out.println("There is no such table. ");
             e.printStackTrace();
         }
     }
@@ -76,7 +104,8 @@ public class DatabaseHandler {
             stmt = conn.createStatement();
             resultSet = stmt.executeQuery(query);
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("There is no such table. ");
+//            e.printStackTrace();
             return null;
         }
         return resultSet;
