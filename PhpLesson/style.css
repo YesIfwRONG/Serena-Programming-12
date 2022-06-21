@@ -22,7 +22,7 @@ header nav ul li a {
     font-family: Arial;
     font-size: 16px;
     color: #111;
-    line-height: 35px;
+    line-height: 60px;
 }
 a{
     text-decoration: none;
@@ -86,7 +86,7 @@ header .nav-login a {
     font-family: Arial;
     font-size: 40px;
     color: #111111;
-    line-height: 30px;
+    line-height: 50px;
     text-align: center;
 }
 /*Sign up style*/
