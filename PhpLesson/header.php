@@ -6,13 +6,17 @@
     <title>Login System</title>
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="main-wrapper">
                 <ul>
-                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="index.php">HOME&nbsp;</a></li>
+                    <li><a href="post.php">&nbsp;POSTS</a></li>
                 </ul>
                 <div class="nav-login">
                     <?php
