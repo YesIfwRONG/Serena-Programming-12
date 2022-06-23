@@ -155,11 +155,13 @@ header .nav-login a:hover{
     font-size: 3em;
 }
 .avatar{
+    margin-left: 5px;
+    margin-top: 5px;
     width: 50px;
     border-radius: 50%;
 }
 .user-name{
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: inline-block;
 }
 
@@ -170,6 +172,7 @@ header .nav-login a:hover{
     height: 30%;
     border: solid 2px #222;
     font-family: Arial;
+
 }
 
 .info {
@@ -180,26 +183,38 @@ header .nav-login a:hover{
     font-family: Arial;
     border: none;
 }
+.center{
+    width: 50px;
+    float: right;
+    margin-top: 22px;
+    margin-right: 87%;
+    display: inline;
+
+}
 
 .subject{
     width: 99.6%;
     height: 40px;
     border: none;
+    margin-top: 1px;
+    font-size: 1.2em;
 }
-
 .content{
     margin-bottom: 5px;
     width: 99.6%;
-    height: 100px;
+    height: 140px;
     border: none;
+    margin-top: 1px;
+    font-size: 1em;
 }
 
 .post-sets {
     float: right;
+    margin-top: -2.5px;
     background-color: #fff;
     width: 50px;
     height: 50px;
-    border: solid 2px #222;
+    border: solid 1.5px #222;
     border-radius: 50%;
     font-family: Arial;
     text-align: center;
