@@ -11,10 +11,19 @@ include_once 'header.php';
                         <h3>This is a place to record your own dream. </h3>
                   </div>';
         }else{
-            echo '<div class="user-sets">'.
-                '<img class="avatar" src="statics/default-user-image-2.png" alt="avatar">'.
-                '<p class="user-name">'.$_SESSION['u_uid'].'</p><br><div><p>About</p><p>There is nothing here. </p></div>'.
-                '</div>';
+            echo '<div class="user-sets">
+                        <img class="avatar" src="statics/default-user-image-2.png" alt="avatar">
+                        <div class="center">
+                             <p class="user-name">'.$_SESSION['u_uid'].'</p>
+                        </div><br>
+                        <div class="post-sections">
+                            <div class="info">
+                                <p class="subject">About</p>
+                            </div>
+                            <p class="content">There is nothing here. </p>
+                            
+                        </div>
+                 </div>';
         }
         ?>
     </div>
