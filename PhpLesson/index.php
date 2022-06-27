@@ -7,7 +7,7 @@ include_once 'header.php';
         <?php
         if (!isset($_SESSION['u_uid'])) {
             echo '<div class="user-sets">
-                        <iframe width="98%" height="49.9%" src="https://www.youtube.com/embed/r2IS8TyIDwk?autoplay=1&mute=1"></iframe>
+                        <iframe width="98%" height="500px" src="https://www.youtube.com/embed/r2IS8TyIDwk?autoplay=1&mute=1"></iframe>
                         <h3>This is a place to record your own dream. </h3>
                   </div>';
         }else{
@@ -17,9 +17,7 @@ include_once 'header.php';
                              <p class="user-name">'.$_SESSION['u_uid'].'</p>
                         </div><br>
                         <div class="post-sections">
-                            <div class="info">
-                                <p class="subject">About</p>
-                            </div>
+                            <p class="subject">About</p>
                             <p class="content">There is nothing here. </p>
                             
                         </div>
